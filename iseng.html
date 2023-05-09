@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Hai Vaniaa</h1>
+        <img src="pinch-cheeks-anime.gif">
+        <h1>semangat ya ngerjain lapraknya😘</h1>
+        <button id='btn_pasti dong' onclick='alert("I <3 U")'>semangat dong</button>
+            <button id='btn_engga' onclick='engga(this)'
+            style='position:absolute'>biasa aja</button>
+    </body>
+    <script>
+        function engga(id){
+            var pasti dong = document.getElementById('btn_pasti dong');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+pasti dong.offsettop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+    </script>
+</html>
